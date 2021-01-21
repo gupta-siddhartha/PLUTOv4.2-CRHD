@@ -90,7 +90,7 @@ a. NO
 b. NC_PdV_TOTENG
 c. NC_DCR_TOTENG
 
-Set CR_FLUID to "NC_PdV_TOTENG", which is reported as "unplit-pdv (Et+Ecr)" method in Gupta, Sharma, Mignone 2021.
+Set CR_FLUID to "NC_PdV_TOTENG", which is reported as "unsplit-pdv (Et+Ecr)" method in Gupta, Sharma, Mignone 2021.
 NC_DCR_TOTENG option is NOT recommended, to be removed in future release.
 
 Once you choose "EOS   IDEAL" and "CR_FLUID  NC_PdV_TOTENG" then type <enter>.
