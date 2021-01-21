@@ -114,7 +114,7 @@ If you do not wish to use this parameter leave it as '0'.
 
 Open init.c.
 Add the following line
-v[PRS] == ...
+v[PCR] == ...
 Adiabatic index of CRs can be set as 
 g_gammacr = 4/3. Default is 4/3 which stands for the relativistic gas.
 
