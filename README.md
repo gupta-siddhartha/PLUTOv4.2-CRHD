@@ -1,5 +1,6 @@
 # PLUTOv4.2-CRHD 
 PLUTO + Cosmic rays in two-fluid approximation.
+
 Copyright (C) Gupta, Sharma, Mignone 2021 MNRAS
 
 ------------------------------------------------
@@ -9,6 +10,7 @@ two-fluid approximation. Currently, it supports the HD module
 in Cartesian and spherical geometries in 1D, 2D, and 3D. 
 
 ==================================
+
 Reference
 
 ================================== 
@@ -17,6 +19,7 @@ Gupta, Sharma, Mignone 2021, MNRAS
 (https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/). 
 
 ==================================
+
 Downloading
 
 ==================================
@@ -26,6 +29,7 @@ git clone git@github.com:gupta-siddhartha/PLUTOv4.2-CRHD.git <enter>
 You can also download it directly in a zip format.
 
 ==================================
+
 Setting environment
 
 ==================================
@@ -36,6 +40,7 @@ e.g., if you are using MAC or Linux system, you can use
 >> export PLUTO_DIR=/Users/siddhartha/PLUTOv4.2-CRHD/
 
 ==================================
+
 How to turn on CR-HD module
 or you can jump to Test Run.
 
@@ -52,7 +57,7 @@ Follow steps 1 - 9.
 
 USER_DEF_PARAMETERS   1 <enter>
           
-It will show  --> 
+It will show  
 
 -----------------
 
@@ -73,9 +78,11 @@ ROTATING_FRAME                NO
 -------------
 
 >>Step 4:
+
 EOS must be  IDEAL
 
 >>Step 5: 
+
 In CR_FLUID section, you may find three options:
 
 a. NO
@@ -89,21 +96,22 @@ Once you choose "EOS   IDEAL" and "CR_FLUID  NC_PdV_TOTENG" then type <enter>.
 
 >>Step 6: 
 
-It will ask
->> User-defined Parameters <<
-Here you must name one parameter as "Pcr_Shock".
-0             Pcr_Shock 
+It will ask "User-defined Parameters". Here you must name one parameter as "Pcr_Shock".
 
-<enter>
+>>Step 7: 
 
->>Step 7: Other steps such as makefile selection are identical to without CR case. 
+Other steps such as makefile selection are identical to without CR case. 
 
-Step 8: Once you click on "Quit", open pluto.ini.
+Step 8: 
+
+Once you click on "Quit", open pluto.ini.
 Here you will find "Pcr_Shock            0" at the end.
 This set CR pressure fraction "w_{cr}" at shock (see Eq 18 of Gupta, Sharma, Mignone 2021).
 If you do not wish to use this parameter leave it as '0'.
 
->> Step 9: Open init.c.
+>> Step 9: 
+
+Open init.c.
 Add the following line
 v[PRS] == ...
 Adiabatic index of CRs can be set as 
