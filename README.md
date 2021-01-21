@@ -126,15 +126,19 @@ Test run
 
 ==================================
 
-We have provided the set up of a shock tube problem.
-(section 5.2 in Gupta, Sharma, Mignone 2021).
+We have given a set up of a shock tube test problem
+which is discussed in section 5.2 of Gupta, Sharma, Mignone 2021.
 
 To generate output use the lines below.
 
 cd TestProblems/CRHD/ShockTube/
+
 python $PLUTO_DIR/setup.py
+
 <enter, enter,.., Quit>
+
 make
+
 ./pluto
 
 This will generate data.0001.tab. To plot CR pressure
