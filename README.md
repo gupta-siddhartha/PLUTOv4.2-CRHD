@@ -1,32 +1,36 @@
 # PLUTOv4.2-CRHD
 PLUTO + Cosmic rays in two-fluid approximation.
 
-This version of the PLUTO code includes cosmic ray physics 
-under two-fluid approximation. Currently, it supports the HD module
- in Cartesian and spherical geometries in 1D, 2D, and 3D. 
+This version includes cosmic ray physics under 
+two-fluid approximation. Currently, it supports the HD module
+in Cartesian and spherical geometries in 1D, 2D, and 3D. 
 
-Implementation of two-fluid CR-HD module is detailed in 
-Gupta, Sharma, Mignone 2021, MNRAS (https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/). 
-Below we provide some further details to run the code.
+==================================
+Reference
+================================== 
+Gupta, Sharma, Mignone 2021, MNRAS 
+(https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/). 
 
 ==================================
 Downloading
 ==================================
-Open terminal window and write the following command
+Open terminal window and write the following command:
 git clone git@github.com:gupta-siddhartha/PLUTOv4.2-CRHD.git <enter>
 You can also download it directly in a zip format.
 
 ==================================
 Setting environment
 ==================================
-At first, set the path to the PLUTO source directory following the PLUTO user's manual, which can be found at Doc/.
-e.g., if you are using MAC or Linux system, you may use 
+Set the path to the PLUTO source directory 
+following the PLUTO user's manual, which can be found at Doc/.
+e.g., if you are using MAC or Linux system, you can use 
 >> export PLUTO_DIR=/Users/siddhartha/PLUTOv4.2-CRHD/
 
 ==================================
 How to turn on CR-HD module
 ==================================
-Use of CR-HD mode is as easy as other modules in PLUTO.
+Use of CR-HD module is as easy as other modules in PLUTO.
+Follow steps 1 - 7.
 >>Step 1: python $PLUTO_DIR/setup.py <enter>
 >>Step 2: Setup problem <enter>
 >>Step 3: PHYSICS HD  and USER_DEF_PARAMETERS   1 <enter>
