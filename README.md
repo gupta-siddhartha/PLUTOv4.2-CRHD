@@ -113,7 +113,7 @@ it can be useful to your research problem.
 We will be happy if you find the code useful and appreciate our effort. 
 Journal details can be found at https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/abstract.
 
-==================================
+
 Have fun with PLUTO+CR-HD.
 ==================================
 
