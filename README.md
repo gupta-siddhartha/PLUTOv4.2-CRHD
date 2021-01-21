@@ -1,6 +1,7 @@
 # PLUTOv4.2-CRHD 
 PLUTO + Cosmic rays in two-fluid approximation.
 Copyright (C) Gupta, Sharma, Mignone 2021 MNRAS
+
 ------------------------------------------------
 
 This version includes cosmic ray physics under 
@@ -9,20 +10,26 @@ in Cartesian and spherical geometries in 1D, 2D, and 3D.
 
 ==================================
 Reference
+
 ================================== 
+
 Gupta, Sharma, Mignone 2021, MNRAS 
 (https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/). 
 
 ==================================
 Downloading
+
 ==================================
+
 Open terminal and write the following command:
 git clone git@github.com:gupta-siddhartha/PLUTOv4.2-CRHD.git <enter>
 You can also download it directly in a zip format.
 
 ==================================
 Setting environment
+
 ==================================
+
 Set the path to the PLUTO source directory 
 following the PLUTO user's manual, which can be found at Doc/.
 e.g., if you are using MAC or Linux system, you can use 
@@ -31,15 +38,20 @@ e.g., if you are using MAC or Linux system, you can use
 ==================================
 How to turn on CR-HD module
 or you can jump to Test Run.
+
 ==================================
+
 Use of CR-HD module is as easy as other modules in PLUTO.
 Follow steps 1 - 7.
 >>Step 1: python $PLUTO_DIR/setup.py <enter>
 >>Step 2: Setup problem <enter>
 >>Step 3: PHYSICS HD        and 
-          USER_DEF_PARAMETERS   1 <enter>
+USER_DEF_PARAMETERS   1 <enter>
+          
 It will show  --> 
+
 -----------------
+
 EOS                           IDEAL
 ENTROPY_SWITCH                NO
 CR_FLUID                      NO   <== New
@@ -47,7 +59,9 @@ THERMAL_CONDUCTION            NO
 VISCOSITY                     NO
 CR_DIFFUSION                  NO   <== New
 ROTATING_FRAME                NO
+
 -------------
+
 >>Step 4: 
 In CR_FLUID section, you may find three options:
 a. NO
@@ -81,9 +95,13 @@ Adiabatic index of CRs can be set as
 g_gammacr = 4/3. Default is 4/3 which stands for the relativistic gas.
 
 You are all set. Have fun with PLUTO+CR-HD.
+
 ==================================
+
 Test run
+
 ==================================
+
 We have provided the set up of a shock tube problem.
 (section 5.2 in Gupta, Sharma, Mignone 2021).
 
@@ -108,16 +126,19 @@ If you need further help, contact gsiddhartha@uchicago.edu
 or www.siddharthagupta.com.
 
 ==================================
+
 Acknowledgement
+
 ==================================
-Please do remember, the code is distributed freely with a hope that
+
+This code is distributed freely with a hope that
 it can be useful to your research problem. 
 We will be happy if you find the code useful and appreciate our effort. 
 Journal details can be found at https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/abstract.
 
 
-
 Have fun with PLUTO+CR-HD.
+
 ==================================
 
 
