@@ -68,6 +68,8 @@
 
   \todo
     - merge GetAreaFlux and TotalFlux ?
+  \Changes: Cosmic ray HD physics is included, supports Cartesian and spherical
+            Geometry. Ref:- Gupta, Sharma, Mignone 2021
 */
 /* ///////////////////////////////////////////////////////////////////// */
 #include "pluto.h"

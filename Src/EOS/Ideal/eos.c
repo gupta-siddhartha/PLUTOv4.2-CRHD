@@ -8,6 +8,8 @@
                     
   \author A. Mignone (mignone@ph.unito.it)
   \date   April 14, 2014
+
+  \Changes done to include CR HD physics, Ref:- Gupta, Sharma, Mignone 2021.
 */
 /* ///////////////////////////////////////////////////////////////////// */
 #include "pluto.h"
@@ -37,19 +39,7 @@ void SoundSpeed2 (double **v, double *cs2, double *h, int beg, int end,
      cs2[i] = g_gamma*v[i][PRS]/v[i][RHO];
      
      #if CR_FLUID != NO // NEW
-      if (CR_FLUID == NC_OS_PdV_TOTENG){
-        // Operator splitting method alters the eigen value
-        // It will not be used
-        cs2[i] += g_gamma*(v[i][PCR]/v[i][RHO]); 
- 
-      } else {
-
-        
-        cs2[i] += g_gammacr*(v[i][PCR]/v[i][RHO]);
-        //cs2[i] += g_gamma*(v[i][PCR]/v[i][RHO]);
-        //cs2[i] += g_gamma*(v[i][PCR]/v[i][RHO])*1.1;
-
-      }  
+        cs2[i] += g_gammacr*(v[i][PCR]/v[i][RHO]);  
      #endif
    }
   #elif PHYSICS == RHD || PHYSICS == RMHD
