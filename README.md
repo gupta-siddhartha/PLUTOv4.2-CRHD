@@ -42,10 +42,14 @@ or you can jump to Test Run.
 ==================================
 
 Use of CR-HD module is as easy as other modules in PLUTO.
-Follow steps 1 - 7.
+Follow steps 1 - 9.
+
 >>Step 1: python $PLUTO_DIR/setup.py <enter>
+          
 >>Step 2: Setup problem <enter>
+          
 >>Step 3: PHYSICS HD        and 
+
 USER_DEF_PARAMETERS   1 <enter>
           
 It will show  --> 
@@ -53,44 +57,55 @@ It will show  -->
 -----------------
 
 EOS                           IDEAL
+
 ENTROPY_SWITCH                NO
+
 CR_FLUID                      NO   <== New
+
 THERMAL_CONDUCTION            NO
+
 VISCOSITY                     NO
+
 CR_DIFFUSION                  NO   <== New
+
 ROTATING_FRAME                NO
 
 -------------
 
->>Step 4: 
+>>Step 4:
+EOS must be  IDEAL
+
+>>Step 5: 
 In CR_FLUID section, you may find three options:
+
 a. NO
 b. NC_PdV_TOTENG
 c. NC_DCR_TOTENG
+
 Set CR_FLUID to "NC_PdV_TOTENG", which is reported as "unplit-pdv (Et+Ecr)" method in Gupta, Sharma, Mignone 2021.
 NC_DCR_TOTENG option is NOT recommended, to be removed in future release.
 
-Once you choose "EOS   IDEAL" and "CR_FLUID  NC_PdV_TOTENG" then type <enter>. Note that EOS must be  IDEAL.
+Once you choose "EOS   IDEAL" and "CR_FLUID  NC_PdV_TOTENG" then type <enter>.
 
->>Step 5: 
+>>Step 6: 
+
 It will ask
 >> User-defined Parameters <<
 Here you must name one parameter as "Pcr_Shock".
 0             Pcr_Shock 
+
 <enter>
 
->>Step 6: Other steps such as makefile selection are identical to without CR case. 
+>>Step 7: Other steps such as makefile selection are identical to without CR case. 
 
-Step 7: Once you click on "Quit", open pluto.ini.
+Step 8: Once you click on "Quit", open pluto.ini.
 Here you will find "Pcr_Shock            0" at the end.
 This set CR pressure fraction "w_{cr}" at shock (see Eq 18 of Gupta, Sharma, Mignone 2021).
 If you do not wish to use this parameter leave it as '0'.
 
->> Step 8: Open init.c.
-Add the following line
-v[PRS] == whatever.
-
 >> Step 9: Open init.c.
+Add the following line
+v[PRS] == ...
 Adiabatic index of CRs can be set as 
 g_gammacr = 4/3. Default is 4/3 which stands for the relativistic gas.
 
