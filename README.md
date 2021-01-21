@@ -1,4 +1,5 @@
-# PLUTOv4.2-CRHD
+#===== PLUTOv4.2-CRHD =====
+Copyright (C) Gupta, Sharma, Mignone 2021 MNRAS
 PLUTO + Cosmic rays in two-fluid approximation.
 
 This version includes cosmic ray physics under 
