@@ -42,7 +42,8 @@ e.g., if you are using MAC or Linux system, you can use
 ==================================
 
 How to turn on CR-HD module
-or you can jump to Test Run.
+
+(or you can jump to Test Run section)
 
 ==================================
 
@@ -102,7 +103,7 @@ It will ask "User-defined Parameters". Here you must name one parameter as "Pcr_
 
 Other steps such as makefile selection are identical to without CR case. 
 
-Step 8: 
+>> Step 8: 
 
 Once you click on "Quit", open pluto.ini.
 Here you will find "Pcr_Shock            0" at the end.
