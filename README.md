@@ -43,18 +43,20 @@ e.g., if you are using MAC or Linux system, you can use
 
 How to turn on CR-HD module
 
-(or you can jump to Test Run section)
+(or you can jump into the Test Run section)
 
 ==================================
 
-Use of CR-HD module is as easy as other modules in PLUTO.
+CR-HD module is as easy as other modules in PLUTO.
 Follow steps 1 - 9.
 
 >>Step 1: python $PLUTO_DIR/setup.py 
           
 >>Step 2: Setup problem 
           
->>Step 3: PHYSICS HD        and 
+>>Step 3: 
+
+PHYSICS HD        and 
 
 USER_DEF_PARAMETERS   1 
           
@@ -91,7 +93,7 @@ b. NC_PdV_TOTENG
 c. NC_DCR_TOTENG
 
 Set CR_FLUID to "NC_PdV_TOTENG", which is reported as "unsplit-pdv (Et+Ecr)" method in Gupta, Sharma, Mignone 2021.
-NC_DCR_TOTENG option is NOT recommended, to be removed in future release.
+NC_DCR_TOTENG option is NOT recommended, to be removed in future releases.
 
 Once you choose "EOS   IDEAL" and "CR_FLUID  NC_PdV_TOTENG".
 
@@ -150,16 +152,15 @@ Note that, column '6' stands for CRs in 1D [see column specification in tab.out]
 
 ==================================
 
-If you need further help, contact gsiddhartha@uchicago.edu 
-or www.siddharthagupta.com.
+If you need further help, contact www.siddharthagupta.com.
 
 ==================================
 
-Acknowledgement
+Acknowledgment
 
 ==================================
 
-This code is distributed freely with a hope that
+This code is distributed freely with the hope that
 it can be useful to your research problem. 
 We will be happy if you find the code useful and appreciate our effort. 
 Journal details can be found at https://ui.adsabs.harvard.edu/abs/2019arXiv190607200G/abstract.
